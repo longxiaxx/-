@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img/bj.jpg) no-repeat fixed center top;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 390px;
+    width: 350px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-right: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+}
+
+.box:hover {
+    box-shadow: 10px 10px 10px -4px rgba(0,0,0,.3);
+}
+
+.box h1 {
+    margin-bottom: 35px;
+}
+
+.box .text-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: stretch;*/
+    margin-bottom: 10px;
+}
+
+.box .text-input label {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.box .text-input input {
+    height: 25px;
+    width: 250px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .3);
+    font-size: 14px;
+    outline: none;
+    padding: 0 5px;
+}
+
+.box .text-input input:focus {
+    border: 1px solid rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.box .forget {
+    width: 250px;
+    text-align: right;
+    font-size: 13px;
+}
+.box .forget a{
+    text-decoration: none;
+}
+
+.forget a:hover {
+    color: #fff;
+}
+
+a:visited {
+    color: #333;
+}
+a:link {
+    color: #333;
+}
+
+.box .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 250px;
+}
+
+.box .btn button {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid rgba(195,190,141, .8);
+    background-color: rgba(195,190,141, .7);
+    border-radius: 5px;
+}
+.box .btn button:hover {
+    border: 1px solid rgba(170,179,124, .8);
+    background-color: rgba(170,179,124, .5);
+
+}
