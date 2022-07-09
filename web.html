@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function login() {
-            alert('登录成功！');
-        }
-        function register() {
-            alert('暂未开发注册账号');
-        }
-    </script>
+
 </head>
 <body>
+<div class="head" id="link"><a href="#">点击登录</a></div>
 <div class="box">
-    <h1>登录</h1>
+    <div><a class="close" id="close" href="javascript:void(0)">X</a></div>
+    <h1>Login</h1>
     <div class="text-input">
         <label>账号</label>
         <input type="text">
@@ -28,9 +23,39 @@
         <a href="#">忘记密码？</a>
     </div>
     <div class="btn">
-        <button onclick="login()">登录</button>
+        <button onclick="loginBtn()">登录</button>
         <button onclick="register()">注册</button>
     </div>
 </div>
+<div class="bg"></div>
+
+<script>
+    function loginBtn() {
+        alert('登录成功！');
+    }
+
+    function register() {
+        alert('暂未开发注册账号');
+    }
+
+    var login = document.querySelector('.box');
+    var mask = document.querySelector('.bg');
+    var link = document.querySelector('#link');
+    var closeBtn = document.querySelector('#close');
+
+    link.addEventListener('click', function () {
+        mask.style.display = 'block';
+        login.style.display = 'flex';
+        link.style.display = 'none';
+    })
+
+    closeBtn.addEventListener('click', function () {
+        mask.style.display = 'none';
+        login.style.display = 'none';
+        link.style.display = 'block';
+    })
+
+</script>
+
 </body>
 </html>
